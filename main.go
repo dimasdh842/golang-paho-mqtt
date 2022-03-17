@@ -34,7 +34,7 @@ func main() {
 		panic(token.Error())
 	}
 
-	topic := "firmansmoh/v1"
+	topic := "robotics/v1"
 	token = client.Subscribe(topic, 1, nil)
 	token.Wait()
 	fmt.Printf("Subscribed to topic %s\n", topic)
